@@ -16,6 +16,7 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrService, ToastrModule } from 'ngx-toastr';
+import { MenuComponent } from './menu/menu.component';
 
 
 
@@ -27,7 +28,8 @@ import { ToastrService, ToastrModule } from 'ngx-toastr';
     ListComponent,
     DetailsComponent,
     CreateComponent,
-    UpdateComponent
+    UpdateComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
