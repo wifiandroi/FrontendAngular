@@ -1,5 +1,5 @@
 <app-menu></app-menu>
-<div class="container">
+<div class="container" *ngIf="actividad">
     <div class="row mt-5">
         <div class="col-md-4 mx-auto">
 
@@ -8,16 +8,16 @@
                     <i class="fa-regular fa-id-badge"></i>   <h3>Details</h3>  <i class="fa-brands fa-opencart"></i>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title"> ID: 1</h5>                 
+                  <h5 class="card-title"> ID: {{actividad.id}}</h5>                 
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong> Nombre: </strong> falta</li>
-                    <li class="list-group-item"><strong> Apellidos: </strong>falta</li>
-                    <li class="list-group-item"><strong> Precio: </strong>falta</li>
+                    <li class="list-group-item"><strong> Nombre: </strong> {{actividad.nombre}}</li>
+                    <li class="list-group-item"><strong> Apellidos: </strong>{{actividad.apellido}}</li>
+                    <li class="list-group-item"><strong> Precio: </strong>{{actividad.precio}}</li>
                   </ul>
 
                 </div>
                 <div class="card-footer text-muted text-end">
-                    <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-angles-left"></i> Retornar</a>
+                    <a  routerLink="/" class="btn btn-primary btn-sm"><i class="fa-solid fa-angles-left"></i> Retornar</a>
                 </div>
               </div>
 

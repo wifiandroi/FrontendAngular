@@ -7,7 +7,7 @@ import { UpdateComponent } from './actividad/update.component';
 
 const routes: Routes = [
   {path:'',component:ListComponent},
-  {path:'detail',component:DetailsComponent},
+  {path:'detail/:id',component:DetailsComponent},
   {path:'create',component:CreateComponent},
   {path:'update',component:UpdateComponent},
   {path:'**',redirectTo:'', pathMatch:'full'}

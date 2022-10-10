@@ -13,12 +13,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>2.02</td>
-            <td><button class="btn btn-success btn-sm" routerLink="/detail"><i class="fa-regular fa-eye"></i></button></td>
+          <tr *ngFor="let activ of actividades">
+            <th scope="row">{{activ.id}}</th>
+            <td>{{activ.nombre}}</td>
+            <td>{{activ.apellido}}</td>
+            <td>{{activ.precio}}</td>
+            <td><button class="btn btn-success btn-sm" routerLink="/detail/{{activ.id}}"><i class="fa-regular fa-eye"></i></button></td>
             <td><button class="btn btn-info btn-sm" routerLink="/update"><i class="fa-solid fa-pen-to-square"></i></button></td>
             <td><button class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></button></td>           
           </tr>
