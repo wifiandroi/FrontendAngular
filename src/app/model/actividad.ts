@@ -1,7 +1,7 @@
 export class Actividad {
     id!: number;
-    nombre: String;
-    apellido: String;
+    nombre: string;
+    apellido: string;
     precio:number;
 
     constructor(nombre: string, apellido: string, precio: number){

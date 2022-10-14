@@ -19,8 +19,8 @@
             <td>{{activ.apellido}}</td>
             <td>{{activ.precio}}</td>
             <td><button class="btn btn-success btn-sm" routerLink="/detail/{{activ.id}}"><i class="fa-regular fa-eye"></i></button></td>
-            <td><button class="btn btn-info btn-sm" routerLink="/update"><i class="fa-solid fa-pen-to-square"></i></button></td>
-            <td><button class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></button></td>           
+            <td><button class="btn btn-info btn-sm" routerLink="/update/{{activ.id}}/{{activ.nombre}}/{{activ.apellido}}/{{activ.precio}}"><i class="fa-solid fa-pen-to-square"></i></button></td>
+            <td><button class="btn btn-danger btn-sm" (click)="onDelete(activ.id)"><i class="fa-solid fa-trash-can"></i></button></td>           
           </tr>
 
         </tbody>
